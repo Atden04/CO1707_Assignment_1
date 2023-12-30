@@ -1,0 +1,138 @@
+/*Author: Alexander Denton
+  Date: 14-11-2023
+*/
+
+body {
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	background-color: firebrick;
+	border: 0.2em solid black;
+}
+
+nav {
+	margin-left: auto;
+}
+
+.myNav{
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+	list-style-type: none;
+}
+.navList{
+    text-align:center;
+    font-size: 1.5em;
+    padding: 0.1em;
+    margin: 2em;
+}
+
+.navList a {
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+.navList a:hover {
+	color: gainsboro;
+}
+
+.button{
+	text-align:center;
+	font-size: 1.5em;
+	padding: 0.1em;
+	margin: 2m;
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+.button:hover {
+	color: gainsboro;
+}
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.side {
+	width: 30%;
+	background-color: #f1f1f1;
+	padding: 1em;
+}
+
+.main {
+	width: 70%;
+	background-color: #ffffff;
+	padding: 1em;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.iframe {
+	width: 100%;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+ /* Footer */
+ .footer {
+     padding: 2em;
+     text-align: center;
+     background: #ddd;
+	 display: flex;
+	 flex-wrap: wrap;
+ }
+
+ .links {
+	width: 33%;
+	padding: 1em;
+ }
+
+ .contact {
+	width: 33%;
+	padding: 1em;
+ }
+
+ .location {
+	width: 33%;
+	padding: 1em;
+ }
+ 
+ .mySubNav{
+	list-style-type: none;
+	padding:0;
+    margin: 0;
+    display: flex;
+}
+.subNavList{
+	text-align: center;
+    font-size: 1.5em;
+    padding: 0.1em;
+    flex: 1;
+}
+.subNavList a{
+	text-decoration: none;
+	background-color: crimson;
+	color: cornsilk;
+	display: block;
+	border-radius: 5em;
+}
+.subNavList a:hover{
+	color: cyan;
+}
+
+
+* {
+    box-sizing: border-box;
+}
