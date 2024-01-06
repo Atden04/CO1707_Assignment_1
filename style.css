@@ -58,7 +58,7 @@ nav {
 }
 
 .main {
-	max-width: 800px;
+	/*max-width: 1000px;*/
 	margin: auto;
 	
 	flex-wrap: wrap;
@@ -79,6 +79,34 @@ h2 {
 	width: 100%;
 	padding: 1em;
 	border-radius: 1em;
+}
+
+#productList {
+	display: flex;
+	/*flex-direction: column;*/
+  	flex-wrap: wrap;
+  	align-items: flex-end;
+	list-style-type: none;
+}
+
+.product {
+	border: 0.2em solid black;
+	width: 25%;
+	margin: 1em;
+}
+
+.productImage img{
+	width: 100%;
+	object-fit: contain;
+}
+
+.productInfo {
+	padding: 0.9em;
+	background-color: #e9e9e9;
+}
+
+.price {
+	font-weight: bold;
 }
 
 
