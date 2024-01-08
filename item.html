@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- link to the stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body onload="initialisePage()">
+    <header> <!-- header bar that is going to appear at the top of the screen -->
+        <div class="logo"><img src="images/logo.svg" alt="UCLan logo"></div>
+        <div class="siteName">Student Shop</div>
+        <nav> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+            <ul class="navList">
+                <li class="navItem"><a href="index.html">Home</a></li>
+                <li class="navItem"><a href="products.html"> Products</a> </li>
+                <li class="navItem"><a href="cart.html"> Cart</a> </li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Content captured from Desing Requirements video -->
+        <div class="main">
+            <ul id="productList">
+                <li class='item'>
+                    <div class ='itemImage'>
+                    </div>
+                    <div class='itemInfo'>
+                        <h2>name - colour</h2>
+                        <p>This is a not very long hoodies description <a onClick="sessionStorage.setItem('product',hoodies[i] )" href='item.html'>Read More.</a></p>
+                        <p class='price'>£0.00</p>
+                        <button type="button" class="buyButton" onclick="addItemToCart(hoodies[i])">Buy</button>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+ 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerSection">
+            <h3>Links</h3>
+            <!-- link to student's union website-->
+            <a href="https://www.uclansu.co.uk/">Students' Union</a>
+        </div>
+        <div class="footerSection">
+            <h3>Contact</h3>
+            <p>Email : suinformation@uclan.ac.uk</p>
+            <p>Phone: 01772 89 3000</p>
+        </div>
+        <div class="footerSection">
+            <h3>Location</h3>
+            <p>University of Central Lancashire Students' Union,<br>Fylde Road, Preston. PR1 7BY<br>Registered in
+                England<br>Company Number: 07623917<br>Registered Charity Number: 1142616</p>
+        </div>
+    </div>
+    <script>
+        function initialisePage()
+			{
+                let itemString = localStorage.getItem('item');
+                let itemArray = JSON.parse(itemString);
+                console.log(itemArray);
+				var div = document.getElementsByClassName("productImage");
+                div.innerHTML = "<img src='" + itemArray[4]+ "' alt='hoodie'>";
+			}
+    </script>
+</body>
+
+</html>

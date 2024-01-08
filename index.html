@@ -55,7 +55,12 @@
         </div>
     </div>
     <script>
-        
+       if (typeof(Storage) !== "undefined") {
+				alert("Storage API is permitted");
+			}
+			else {
+				alert("Storage API is not permitted");
+			} 
     </script>
 </body>
 
