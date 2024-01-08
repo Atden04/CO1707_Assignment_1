@@ -20,23 +20,13 @@
             </ul>
         </nav>
     </header>
-        <!-- Content captured from Desing Requirements video -->
-        <div class="main">
-            <ul id="productList">
-                <li class='item'>
-                    <div class ='itemImage'>
-                    </div>
-                    <div class='itemInfo'>
-                        <h2>name - colour</h2>
-                        <p>This is a not very long hoodies description <a onClick="sessionStorage.setItem('product',hoodies[i] )" href='item.html'>Read More.</a></p>
-                        <p class='price'>£0.00</p>
-                        <button type="button" class="buyButton" onclick="addItemToCart(hoodies[i])">Buy</button>
-                    </div>
-                    
-                </li>
-            </ul>
-        </div>
- 
+    <!-- Content captured from Desing Requirements video -->
+    <div class="main">
+        <ul id="itemList">
+                        
+        </ul>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
         <div class="footerSection">
@@ -56,14 +46,17 @@
         </div>
     </div>
     <script>
-        function initialisePage()
-			{
-                let itemString = localStorage.getItem('item');
-                let itemArray = JSON.parse(itemString);
-                console.log(itemArray);
-				var div = document.getElementsByClassName("productImage");
-                div.innerHTML = "<img src='" + itemArray[4]+ "' alt='hoodie'>";
-			}
+        var itemDetails;
+        function initialisePage() {
+            let itemString = sessionStorage.getItem('itemDetails');
+            itemDetails = JSON.parse(itemString);
+            console.log(itemDetails);
+            var ul = document.getElementById("itemList");
+            console.log(ul);
+
+            ul.innerHTML = "<li class='item'><div class ='itemImage'><img src='" + itemDetails[4] + "' alt=" + itemDetails[0] + "></div><div class='itemInfo'><h2>" + itemDetails[0] + " - " + itemDetails[1] + "</h2><p>" + itemDetails[2] + "</p><p class='price'>" + itemDetails[3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(itemDetails)'>Buy</button></div></li>";
+            console.log(ul);
+        }
     </script>
 </body>
 

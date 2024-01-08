@@ -109,9 +109,15 @@ h2 {
 	font-weight: bold;
 }
 
+#itemList {
+	list-style-type: none;
+}
+
 .item {
+	justify-self: center;
+	text-align: center;
 	border: 0.2em solid black;
-	width: 70%;
+	width: 50%;
 	margin: 1em;
 }
 
