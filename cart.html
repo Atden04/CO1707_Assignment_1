@@ -5,20 +5,39 @@
     <link rel="stylesheet" type="text/css" href="style.css" /> <!-- link to the stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Student Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header> <!-- header bar that is going to appear at the top of the screen -->
+    <header>
+        <!-- header bar that is going to appear at the top of the screen  onload="updateNav()" onresize="updateNav()"-->
         <div class="logo"><img src="images/logo.svg" alt="UCLan logo"></div>
         <div class="siteName">Student Shop</div>
-        <nav> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+        <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+        <nav class="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
             <ul class="navList">
                 <li class="navItem"><a href="index.html">Home</a></li>
                 <li class="navItem"><a href="products.html"> Products</a> </li>
                 <li class="navItem"><a href="cart.html"> Cart</a> </li>
             </ul>
         </nav>
+        <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+        <!-- First div is for burger menu icon-->
+        <div class="mobileNav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+        </div>
+        <!-- div of links for the page-->
+        <div id="mobileNavList">
+            <a href="index.html">Home</a>
+            <a href="products.html"> Products</a>
+            <a href="cart.html"> Cart</a>
+        </div>
     </header>
         <!-- Content captured from Desing Requirements video -->
         <div class="main">
@@ -44,7 +63,15 @@
         </div>
     </div>
     <script>
-        
+        /* for showing the mobile navigation when using the hamburger icon*/
+        function revealMobileNav() {
+            var x = document.getElementById("mobileNavList");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
     </script>
 </body>
 
