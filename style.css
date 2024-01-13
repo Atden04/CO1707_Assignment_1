@@ -15,13 +15,13 @@ header {
 	/*border: 0.2em solid black;*/
 }
 
-.logo img{
+.logo img {
 	padding: 1em;
 	height: 10vh;
 	object-fit: contain;
 }
 
-.siteName{
+.siteName {
 	margin: 1em;
 	font-size: 2em;
 	color: ghostwhite;
@@ -33,50 +33,53 @@ header {
 	display: none;
 	position: relative;
 	list-style-type: none;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  #mobileNavList {
-	display: none;
-  }
+	margin-left: auto;
+}
 
-  #mobileNavList a{
+/* Hide the links inside the navigation menu (except for logo/home) */
+#mobileNavList {
+	display: none;
+}
+
+#mobileNavList a {
 	text-decoration: none;
 	list-style-type: none;
 	color: ghostwhite;
 	background-color: #BE1622;
 	padding: 14px 16px;
-	font-size: 17px;   /*17px*/
+	font-size: 17px;
+	/*17px*/
 	display: block;
-  }
+}
 
-  #mobileNavList a:hover {
+#mobileNavList a:hover {
 	background-color: #9c121b;
 	color: black;
-  }
-  
-  /* Style navigation menu links */
-  .mobileNav a {
+}
+
+/* Style navigation menu links */
+.mobileNav a {
 	text-decoration: none;
 	list-style-type: none;
 	color: ghostwhite;
 	padding: 14px 16px;
-	font-size: 17px;   /*17px*/
+	font-size: 17px;
+	/*17px*/
 	display: block;
-	
-  }
-  
-  /* Style the hamburger menu */
-  .mobileNav a.icon {
+
+}
+
+/* Style the hamburger menu */
+.mobileNav a.icon {
 	display: block;
-	
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .mobileNav a:hover {
+
+}
+
+/* Add a grey background color on mouse-over */
+.mobileNav a:hover {
 	background-color: #9c121b;
 	color: black;
-  }
+}
 
 
 /*for desktop naavigation*/
@@ -84,19 +87,20 @@ nav {
 	margin-left: auto;
 }
 
-.navList{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /*needs to addapt*/
+.navList {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	/*needs to addapt*/
 	list-style-type: none;
 }
 
-.navItem{
-    text-align:center;
-    font-size: 1.5em;
-    padding: 0.1em;
-    margin: 1.5em;
+.navItem {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.1em;
+	margin: 1.5em;
 }
 
 .navList a {
@@ -111,12 +115,13 @@ nav {
 .main {
 	/*max-width: 1000px;*/
 	margin: auto;
-	
+
 	flex-wrap: wrap;
 	/*width: 70%;*/
 	background-color: #ffffff;
 	padding: 1em;
 }
+
 h1 {
 	font-size: 3.5em;
 	color: #007fb0;
@@ -126,6 +131,7 @@ h2 {
 	font-size: 2em;
 	color: #F2BE1A;
 }
+
 .media {
 	width: 100%;
 	padding: 1em;
@@ -135,8 +141,8 @@ h2 {
 #productList {
 	display: flex;
 	/*flex-direction: column;*/
-  	flex-wrap: wrap;
-  	align-items: flex-end;
+	flex-wrap: wrap;
+	align-items: flex-end;
 	list-style-type: none;
 }
 
@@ -146,7 +152,7 @@ h2 {
 	margin: 1em;
 }
 
-.productImage img{
+.productImage img {
 	width: 100%;
 	object-fit: contain;
 }
@@ -172,7 +178,7 @@ h2 {
 	margin: 1em;
 }
 
-.itemImage img{
+.itemImage img {
 	width: 100%;
 	object-fit: contain;
 }
@@ -185,82 +191,49 @@ h2 {
 
 
 
- /* Footer */
- .footer {
-     padding: 2em;
-     text-align: center;
-     background: #34516C;
-	 display: flex;
-	 flex-wrap: wrap;
- }
+/* Footer */
+.footer {
+	padding: 2em;
+	text-align: center;
+	background: #34516C;
+	display: flex;
+	flex-wrap: wrap;
+}
 
- .footerSection {
+.footerSection {
 	width: 33%;
 	padding: 1em;
 	color: ghostwhite;
- }
- 
-
- /*
- .button{
-	text-align:center;
-	font-size: 1.5em;
-	padding: 0.1em;
-	margin: 2m;
-	text-decoration: none;
-	color: ghostwhite;
 }
 
-.button:hover {
-	color: gainsboro;
-}
- .side {
-	width: 30%;
-	background-color: #f1f1f1;
-	padding: 1em;
-}
- .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 1em;
-    border-radius: 1em;
-}
 
- .mySubNav{
-	list-style-type: none;
-	padding:0;
-    margin: 0;
-    display: flex;
-}
-.subNavList{
-	text-align: center;
-    font-size: 1.5em;
-    padding: 0.1em;
-    flex: 1;
-}
-.subNavList a{
-	text-decoration: none;
-	background-color: crimson;
-	color: cornsilk;
-	display: block;
-	border-radius: 5em;
-}
-.subNavList a:hover{
-	color: cyan;
-}*/
-.desktopNav{
+.desktopNav {
 	display: block;
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 @media only screen and (max-width: 896px) {
 	.mobileNav {
 		display: block;
-	  
+
 	}
-	.desktopNav{
+
+	.desktopNav {
 		display: none;
 	}
-  }
+
+	.logo img {
+		height: 7vh;
+	}
+
+	.siteName {
+		font-size: 1.5em;
+	}
+
+	header {
+		height: 7vh;
+	}
+}
