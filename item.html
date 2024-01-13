@@ -77,6 +77,11 @@
             console.log(ul);
         }
 
+        function addItemToCart(itemDetails) {
+            let itemString = JSON.stringify(itemDetails)
+            localStorage.setItem("item0", itemString)
+        }
+
         /* for showing the mobile navigation when using the hamburger icon*/
         function revealMobileNav() {
             var x = document.getElementById("mobileNavList");
