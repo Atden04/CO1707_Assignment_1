@@ -152,6 +152,8 @@ h2 {
 	border-radius: 1em;
 }
 
+iframe {border: none;}
+
 /*syle for the products.html*/
 #productBookmarks {
 	list-style-type: none;
