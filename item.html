@@ -79,7 +79,8 @@
 
         function addItemToCart(itemDetails) {
             let itemString = JSON.stringify(itemDetails)
-            localStorage.setItem("item0", itemString)
+            let nextIndex = localStorage.length;
+            localStorage.setItem("item" + nextIndex, itemString)
         }
 
         /* for showing the mobile navigation when using the hamburger icon*/

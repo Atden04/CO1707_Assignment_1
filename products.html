@@ -40,7 +40,7 @@
         </div>
     </header>
     <!-- Content captured from Desing Requirements video -->
-    <div class ="side">
+    <div class="side">
         <a href="#top">top</a>
     </div>
     <div class="main">
@@ -193,20 +193,24 @@
                 if (i == 0) {
                     ul.innerHTML += "<li id='hoodiesBookmark' class='product'><div class ='productImage'><img src='" + hoodies[i][4] + "' alt=" + hoodies[i][0] + "></div><div class='productInfo'><h2>" + hoodies[i][0] + " - " + hoodies[i][1] + "</h2><p>" + hoodies[i][2] + " <a onclick='viewItem(hoodies[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + hoodies[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(hoodies[" + i + "])'>Buy</button></div></li>";
                 }
-                ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + hoodies[i][4] + "' alt=" + hoodies[i][0] + "></div><div class='productInfo'><h2>" + hoodies[i][0] + " - " + hoodies[i][1] + "</h2><p>" + hoodies[i][2] + " <a onclick='viewItem(hoodies[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + hoodies[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(hoodies[" + i + "])'>Buy</button></div></li>";
+                else {
+                    ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + hoodies[i][4] + "' alt=" + hoodies[i][0] + "></div><div class='productInfo'><h2>" + hoodies[i][0] + " - " + hoodies[i][1] + "</h2><p>" + hoodies[i][2] + " <a onclick='viewItem(hoodies[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + hoodies[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(hoodies[" + i + "])'>Buy</button></div></li>";
+                }
             }
             for (var i = 0; i < jumpers.length; i++) {
                 if (i == 0) {
                     ul.innerHTML += "<li id='jumpersBookmark' class='product'><div class ='productImage'><img src='" + jumpers[i][4] + "' alt=" + jumpers[i][0] + "></div><div class='productInfo'><h2>" + jumpers[i][0] + " - " + jumpers[i][1] + "</h2><p>" + jumpers[i][2] + " <a onclick='viewItem(jumpers[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + jumpers[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(jumpers[" + i + "])'>Buy</button></div></li>";
+                } else {
+                    ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + jumpers[i][4] + "' alt=" + jumpers[i][0] + "></div><div class='productInfo'><h2>" + jumpers[i][0] + " - " + jumpers[i][1] + "</h2><p>" + jumpers[i][2] + " <a onclick='viewItem(jumpers[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + jumpers[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(jumpers[" + i + "])'>Buy</button></div></li>";
                 }
-                ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + jumpers[i][4] + "' alt=" + jumpers[i][0] + "></div><div class='productInfo'><h2>" + jumpers[i][0] + " - " + jumpers[i][1] + "</h2><p>" + jumpers[i][2] + " <a onclick='viewItem(jumpers[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + jumpers[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(jumpers[" + i + "])'>Buy</button></div></li>";
             }
             for (var i = 0; i < tshirts.length; i++) {
                 if (i == 0) {
                     ul.innerHTML += "<li id='tshirtsBookmark' class='product'><div class ='productImage'><img src='" + tshirts[i][4] + "' alt=" + tshirts[i][0] + "></div><div class='productInfo'><h2>" + tshirts[i][0] + " - " + tshirts[i][1] + "</h2><p>" + tshirts[i][2] + " <a onclick='viewItem(tshirts[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + tshirts[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(tshirts[" + i + "])'>Buy</button></div></li>";
 
+                } else {
+                    ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + tshirts[i][4] + "' alt=" + tshirts[i][0] + "></div><div class='productInfo'><h2>" + tshirts[i][0] + " - " + tshirts[i][1] + "</h2><p>" + tshirts[i][2] + " <a onclick='viewItem(tshirts[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + tshirts[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(tshirts[" + i + "])'>Buy</button></div></li>";
                 }
-                ul.innerHTML += "<li class='product'><div class ='productImage'><img src='" + tshirts[i][4] + "' alt=" + tshirts[i][0] + "></div><div class='productInfo'><h2>" + tshirts[i][0] + " - " + tshirts[i][1] + "</h2><p>" + tshirts[i][2] + " <a onclick='viewItem(tshirts[" + i + "])' href='item.html'>Read More.</a></p><p class='price'>" + tshirts[i][3] + "</p><button type='button' class='buyButton' onclick='addItemToCart(tshirts[" + i + "])'>Buy</button></div></li>";
             }
         }
 
@@ -218,7 +222,8 @@
 
         function addItemToCart(itemDetails) {
             let itemString = JSON.stringify(itemDetails)
-            localStorage.setItem("item0", itemString)
+            let nextIndex = localStorage.length;
+            localStorage.setItem("item" + nextIndex, itemString)
         }
 
         /* for showing the mobile navigation when using the hamburger icon*/

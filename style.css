@@ -117,7 +117,7 @@ nav {
 	margin: auto;
 
 	flex-wrap: wrap;
-	/*width: 70%;*/
+	width: 70%;
 	background-color: #ffffff;
 	padding: 1em;
 }
@@ -173,7 +173,7 @@ h2 {
 
 .product {
 	border: 0.2em solid black;
-	width: 30%;
+	width: 27%;
 	margin: 1em;
 }
 
@@ -211,6 +211,18 @@ h2 {
 .itemInfo {
 	padding: 0.9em;
 	background-color: #e9e9e9;
+}
+
+/* For cart.html */
+td {
+	text-align: center;
+}
+
+.cartImage {
+	height: 10vh;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
