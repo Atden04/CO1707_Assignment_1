@@ -119,22 +119,6 @@ nav {
 	padding: 1em;
 }
 
-/*Used for the link to top of page on products.html*/
-.side {
-	width: 10%;
-}
-
-.side a {
-	position: fixed;
-	top: 50%;
-	left: 0.5em;
-	text-decoration: none;
-	color: ghostwhite;
-	background-color: #34516C;
-	padding: 1em;
-    border-radius: 2em;
-}
-
 /*style for headers*/
 h1 {
 	font-size: 3.5em;
@@ -154,7 +138,22 @@ h2 {
 
 iframe {border: none;}
 
-/*syle for the products.html*/
+/*style for the products.html*/
+.side {
+	width: 10%;
+}
+
+.side a {
+	position: fixed;
+	top: 50%;
+	left: 0.5em;
+	text-decoration: none;
+	color: ghostwhite;
+	background-color: #34516C;
+	padding: 1em;
+    border-radius: 2em;
+}
+
 #productBookmarks {
 	list-style-type: none;
 	display: flex;
@@ -215,7 +214,7 @@ iframe {border: none;}
 	background-color: #e9e9e9;
 }
 
-button {
+.buyButton {
 	margin:auto; 
 	display:block;
 }
@@ -230,6 +229,16 @@ td {
 	display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.emptyBasketDiv {
+	width: 10%;
+}
+
+.emptyBasketDiv button {
+	position: fixed;
+	top: 50%;
+	right: 0.5em;
 }
 
 /* Footer */
