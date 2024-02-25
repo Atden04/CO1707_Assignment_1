@@ -110,7 +110,7 @@ nav {
 }
 
 /*Style for the main of website*/
-.main {
+main {
 	margin: auto;
 
 	flex-wrap: wrap;
@@ -139,11 +139,12 @@ h2 {
 iframe {border: none;}
 
 /*style for the products.html*/
-.side {
+aside {
+	display: block;
 	width: 10%;
 }
 
-.side a {
+#productTopLink a {
 	position: fixed;
 	top: 50%;
 	left: 0.5em;
@@ -154,17 +155,17 @@ iframe {border: none;}
     border-radius: 2em;
 }
 
-#productBookmarks {
+#productSections {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 }
 
-#productBookmarks li a{
+#productSections li a{
 	padding: 0.3em;
 }
 
-#productList {
+.productList {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
@@ -231,10 +232,6 @@ td {
   margin-right: auto;
 }
 
-.emptyBasketDiv {
-	width: 10%;
-}
-
 .emptyBasketDiv button {
 	position: fixed;
 	top: 50%;
@@ -242,7 +239,7 @@ td {
 }
 
 /* Footer */
-.footer {
+footer {
 	padding: 2em;
 	text-align: center;
 	background: #34516C;
