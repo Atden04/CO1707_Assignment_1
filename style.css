@@ -43,7 +43,6 @@ nav {
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-	list-style-type: none;
 }
 
 #desktopNav li {
@@ -51,6 +50,8 @@ nav {
 	font-size: 1.5em;
 	padding: 0.1em;
 	margin: 1em;
+	float: right;
+	list-style-type: none;
 }
 
 #desktopNav a {
