@@ -23,17 +23,17 @@ Assignment 1 index page
         <div class="siteName">Student Shop</div>
         <!-- place the navigation links in a <nav> tag for accessibility purposes -->
             <!--change to id rather than class-->
-        <nav class="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
-            <ul class="navList">
-                <li class="navItem"><a href="index.html">Home</a></li>
-                <li class="navItem"><a href="products.html"> Products</a> </li>
-                <li class="navItem"><a href="cart.html"> Cart</a> </li>
+        <nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+            <ul id="desktopNavList">
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="products.html">Products</a> </li>
+                <li ><a href="cart.html">Cart</a> </li>
             </ul>
         </nav>
         <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
 
         <!-- First div is for burger menu icon-->
-        <nav class="mobileNav">
+        <nav id="mobileNav">
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
                 <i class="fa fa-bars"></i>
@@ -41,8 +41,8 @@ Assignment 1 index page
             <!-- Navigation links (hidden by default) -->
             <ul id="mobileNavList">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html"> Products</a></li>
-                <li><a href="cart.html"> Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
